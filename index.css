@@ -5,7 +5,9 @@
     /* box-sizing: border-box; */
     font-family: "Poppins", sans-serif;
 }
-
+ body::-webkit-scrollbar{
+   display: none;
+}
  nav{
     transition: 0.2s ease;
     height: 9vh;
