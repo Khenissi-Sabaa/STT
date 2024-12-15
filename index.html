@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <title>Société Tahrik de Tarnsport</title>
+</head>
+
+<body>
+    
+    
+     <nav>
+        <div class="logo"> 
+        <img src="image/logo1.png"  alt="logo" width="150px" >
+        </div>
+        <div class="nvav"></div>
+        <div class="navigation">
+            <div class="navigation-item"> 
+        <ul>
+            <li ><a class="link"  href="#">Home</a></li>
+            <li ><a class="link"  href="#service">Services</a></li>
+            <li ><a class="link"  href="#about">About</a></li>
+            <li ><a class="link"  href="contact/contact.html">Contact</a></li>
+        </ul></div></div>
+    </nav>
+    <div class="hero">
+        <div class="blure">
+        <div class="containere">
+            <h1>TRANSPORT <br> SERVICES </h1>
+        </div>
+        <div class="btne"> <a class="btn"  href="login/login.html" target="_blank">Login</a><a class="btn"  href="register/register.html" target="_blank" >Register</a></div>
+    </div>
+    </div>
+    <div class="wrapper" id="about">
+        <div class="inner-wrapper">
+            <h1>Qui sommes nous?</h1>
+            <p>
+                Fondée en  <strong>2012</strong>  ,<strong>Société Tahrik de Tarnsport</strong>  est une société tunisienne spécialisée dans le transport de marchandises de toutes sortes en Tunisie. Grâce à une flotte de camions modernes et à des solutions logistiques sur mesure, nous garantissons une
+                prise en charge efficace et sécurisée de vos expéditions, quels que soient leur type, leur taille ou leur destination. Nous desservons de nombreux secteurs, notamment l’industrie, la grande distribution, l'agroalimentaire, la construction
+                et bien d’autres, en offrant un service de transport rapide, fiable et ponctuel.
+            </p>
+        </div>
+    </div>
+    <div id="service"></div>
+     <div class="tit">
+    <h1 class="tit" >Nos services :</h1>
+    <div class="about">
+        
+        <div class="cole-6"> <img src="image/mr.jpg" alt=""></div>
+        <div class="cole-6">
+        <div class="desc">
+            <h1>Transport de marchandises générales:</h1>
+        <p>Nous assurons le transport de tous types de marchandises, qu’elles soient légères, lourdes, volumineuses ou sensibles. Nos semi-remorques sont adaptées pour transporter des produits industriels, des matériaux de construction, des produits agricoles, des équipements, et bien plus encore.
+
+        </p>
+
+        </div> </div>   </div>
+        <div class="about" >
+        
+            
+            <div class="cole-6">
+            <div class="desc">
+                <h1>Transport national et international:</h1>
+            <p><strong>Société Tahrik de Tarnsport</strong> propose des services de transport à travers toute la Tunisie ainsi qu'à l'international. Nous desservons notamment les pays voisins comme la Libye, l'Algérie, la Mauritanie, et d’autres destinations en Europe et en Afrique.
+
+
+    
+            </p>
+    
+            </div> </div><div class="cole-6"> <img src="image/in.jpg" alt=""></div>   </div>
+            <div class="about">
+        
+                <div class="cole-6"> <img src="image/ls.png" alt=""></div>
+                <div class="cole-6">
+                <div class="desc">
+                    <h1>Location de semi-remorques:</h1>
+                <p>Si vous avez un besoin ponctuel, nous proposons également la location de semi-remorques avec ou sans chauffeur, pour répondre à vos exigences logistiques spécifiques.
+    
+    
+        
+                </p>
+        
+                </div> </div>   </div>
+        </div>
+        <footer>
+            <div class="left-footer">
+                <h1><span style="font-size: 17px;">&copy;2012</span></h1> <h1> Société Tahrik <br> de  Tarnsport</h1>
+            </div>
+            <div class="right-footer">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" >
+            const menuBtn=document.querySelector(".nvav");
+            const navigation=document.querySelector(".navigation");
+            menuBtn.addEventListener("click",()=>{
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+
+            });
+          
+        </script>
+</body>
+
+</html>

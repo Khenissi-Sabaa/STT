@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    margin-bottom: 15vh;
+    transition: 0.5s ease;
+}
+
+.logo img {
+    padding: 20px;
+    width: 560px;
+    transition: 0.5s ease;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.582));
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../image/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+
+body:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.178) ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+}
+.mp i{
+    cursor: pointer;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.wrapper {
+    
+    transition: 1s ease;
+    margin-right: 10vw;
+    /* margin-top: 1vh; */
+    /* z-index: 999; */
+    /* position: absolute; */
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.212), rgba(243, 243, 243, 0.164));
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.582);
+    backdrop-filter: blur(7px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    transition: 0.2s ease;
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    
+    transition: 0.2s ease;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    transition: 0.2s ease;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    caret-color: rgb(0, 0, 0);
+}
+.wrapper #cpp,#mff{
+    margin-bottom: 60px ;
+
+}
+.wrapper #cmf,#cnf{
+    font-size: 12px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    color: #787878;
+
+}
+.wrapper .imp{
+    color: red;
+    font-weight: 500;
+    margin-left: 1vw;
+    
+}
+.input-box input::placeholder {
+    transition: 0.2s ease;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+}
+
+.input-box i {
+    
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(50%);
+    
+    font-size: 20px;
+}
+
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forget a {
+    transition: 0.2s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    transition: 0.2s ease;
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    transition: 0.2s ease;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    text-align: center;
+    margin: 20px 0 15px;
+    font-size: 14.5px;
+}
+
+.register-link a {
+    transition: 0.2s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1024px) {
+    body{
+        align-content: center;
+        justify-items: center;
+       display: block;
+       
+    }
+    .logo {
+        padding: 20px;
+       
+        display: flex;
+        justify-content: center;
+    align-items: center;
+
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .logo img {
+        width: 320px;
+        transition: 0.5s ease;
+    }
+    .wrapper {
+        margin-right: 0;
+        width: 320px;
+        margin-bottom: 5vh;
+    }
+    .wrapper .remember-forget {
+        font-size: 12.5px;
+    }
+    .wrapper .register-link {
+        text-align: center;
+        margin: 20px 0 15px;
+        font-size: 12.5px;
+    }
+}
